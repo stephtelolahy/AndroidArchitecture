@@ -28,13 +28,13 @@ The major benefits of this pattern are:
 
 
 ### View
-User interface
+User interface ... (roles)
 
 ### ViewModel
-Presentation logic
+Presentation logic ... (roles)
 
 ### Model
-Data class and Business logic
+Data class and Business logic ...  (roles)
 
 
 
@@ -45,14 +45,31 @@ Avoid interface boilderplates.
 ![alt text](images/android-architecture-RX.png "Logo Title Text 1")
 
 
-## Testing
-Test structure (assert, execute, verify)
+## Unit Testing
+An Unit test is a small piece of code that test the behaviour or other code. It prove that it works! A good unit test is independent and focus on a single logical concept. 
 
-What to test: busines logic
+### Test main actions
+
+- Arrange objects (setup mocks)
+- Execute (act on the tested object)
+- Verify (assert that something is as expected)
+
+### Dependency injection
+
+DI is a Software pattern that implements passing a service to a client rather than allowing a client to build the service. It allows to test app.
+
+Read more [Koin](https://insert-koin.io/docs/1.0/reference/android/)
+
+### Mock
+
+Mock is a fake object that replaces the dependency of tested class.
+
+Read more [Mockito](https://github.com/mockito/mockito/wiki/Mockito-for-Kotlin)
+
 
 ## Demo
 
-- Create simple Android app : discover components
+- Discover Android components
 - Implement ViewModel
 - Make business layer reactive
 - Implement test
