@@ -24,16 +24,16 @@ The major benefits of this pattern are:
 
 ## How it looks like
 
-![alt text](images/clean_architecture_layers_details.png "Logo Title Text 1")
+![alt text](images/android-architecture-mvvm-2.png "Logo Title Text 1")
 
 
-###View
+### View
 User interface
 
-###ViewModel
+### ViewModel
 Presentation logic
 
-###Model
+### Model
 Data class and Business logic
 
 
@@ -42,7 +42,7 @@ Data class and Business logic
 Make more concise code RX extensions.
 Avoid interface boilderplates.
 
-![alt text](images/0tcslPN3C5PJDW9rk.jpg "Logo Title Text 1")
+![alt text](images/android-architecture-RX.png "Logo Title Text 1")
 
 
 ## Testing
