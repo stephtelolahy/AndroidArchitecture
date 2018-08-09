@@ -1,0 +1,10 @@
+Demo
+
+1. Create new Android application
+2. Build and run
+3. Explore : source (manifest, classes, res), build config (gradle)
+4. Create layout with recyclerView and floatingButton
+5. Setup Model, Adapter and ViewHoler
+6. Add action
+7. Save data in sharedPreferences
+8. Implement ViewModel
