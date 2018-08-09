@@ -8,13 +8,15 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.widget.EditText
 import android.widget.LinearLayout
+import androidx.core.content.edit
+import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var adapter: TaskAdapter
-    private lateinit var tasks: ArrayList<Task>
+    private lateinit var tasks: MutableList<Task>
     private lateinit var preferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,9 +53,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadTask() {
-        tasks = arrayListOf(Task(name = "Game of thrones"),
-                Task(name = "Walking dead", done = true),
-                Task(name = "Big bang theory"))
+        val groupsJsonString = preferences.getString("tasks", "[]")
+        val groupsArray = Gson().fromJson(groupsJsonString, Array<Task>::class.java)
+        tasks = groupsArray.asList().toMutableList()
         refresh()
     }
 
@@ -75,7 +77,8 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun saveData() {
-
+        val groupsJsonString = Gson().toJson(tasks)
+        preferences.edit { putString("tasks", groupsJsonString) }
     }
 }
 

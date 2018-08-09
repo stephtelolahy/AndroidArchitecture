@@ -7,4 +7,5 @@ Demo
 5. Setup Model, Adapter and ViewHoler
 6. Add action
 7. Save data in sharedPreferences
+
 8. Implement ViewModel
