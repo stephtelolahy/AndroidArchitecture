@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 
 
-class TaskAdapter : RecyclerView.Adapter<TaskViewHolder>() {
+class TaskAdapter(private val onCheckedChange: (String, Boolean) -> Unit) : RecyclerView.Adapter<TaskViewHolder>() {
 
-    var tasks = ArrayList<Task>()
+    var items: List<Task> = listOf()
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, p1: Int): TaskViewHolder {
         val v = LayoutInflater.from(viewGroup.context).inflate(R.layout.item_task, viewGroup, false)
@@ -15,13 +15,16 @@ class TaskAdapter : RecyclerView.Adapter<TaskViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return tasks.size
+        return items.size
     }
 
     override fun onBindViewHolder(viewHolder: TaskViewHolder, position: Int) {
-        val task = tasks[position]
+        val task = items[position]
         viewHolder.checkBox.text = task.name
         viewHolder.checkBox.isChecked = task.done
+        viewHolder.checkBox.setOnCheckedChangeListener { _, b ->
+            onCheckedChange(task.id, b)
+        }
     }
 
 }
