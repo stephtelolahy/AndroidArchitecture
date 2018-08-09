@@ -1,4 +1,4 @@
-package com.creativegames.taskapp
+package com.creativegames.taskapp.model
 
 import java.util.*
 

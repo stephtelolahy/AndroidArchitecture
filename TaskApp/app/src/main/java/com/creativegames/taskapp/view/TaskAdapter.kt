@@ -1,8 +1,10 @@
-package com.creativegames.taskapp
+package com.creativegames.taskapp.view
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.creativegames.taskapp.R
+import com.creativegames.taskapp.model.Task
 
 
 class TaskAdapter(private val onCheckedChange: (String, Boolean) -> Unit) : RecyclerView.Adapter<TaskViewHolder>() {
