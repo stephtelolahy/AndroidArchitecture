@@ -1,4 +1,4 @@
-# Android Architecture
+# Android MVVM Demo
 
 ## Introduction
 This tutorial is about how to architect your android application to make sure that it will be
