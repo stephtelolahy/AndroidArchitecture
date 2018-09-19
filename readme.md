@@ -28,15 +28,27 @@ The major benefits of this pattern are:
 
 
 ### View
-User interface ... (roles)
+User interface: Layout, Activity, Fragment, Navigator, RecyclerView.Adapter, RecyclerView.ViewHolder
+- Inflate layout
+- Listen user inputs and inform viewModel about user actions
+- Show dialog, toast
+- Perform animations
+- Start activity
+- All functionality related to Android Context
 
 ### ViewModel
-Presentation logic ... (roles)
+Presentation logic: ViewModel classes
+- Expose view friendly stream of data
+- Expose view state ( loading, error, other states)
+- Validate user input
+- Execute calls to model
+- Raise events (navigation, toast)
 
 ### Model
-Data class and Business logic ...  (roles)
-
-
+Data class and Business logic: Data class, DataManager, Providers
+- Call to API
+- Call to loca storage (DataBase, SharedPreferences, File)
+- Call to device capabilities
 
 ## Reactive approach
 Make more concise code RX extensions.
@@ -65,12 +77,3 @@ Read more [Koin](https://insert-koin.io/docs/1.0/reference/android/)
 Mock is a fake object that replaces the dependency of tested class.
 
 Read more [Mockito](https://github.com/mockito/mockito/wiki/Mockito-for-Kotlin)
-
-
-## Demo
-
-- Discover Android components
-- Implement ViewModel
-- Make business layer reactive
-- Implement test
-
