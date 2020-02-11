@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "645195786189",
+    "firebase_url": "https://iosmvvmdemo-ac7b8.firebaseio.com",
+    "project_id": "iosmvvmdemo-ac7b8",
+    "storage_bucket": "iosmvvmdemo-ac7b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645195786189:android:4a8a6e68cb272bad7f0684",
+        "android_client_info": {
+          "package_name": "com.creativegames.androidmvvmdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645195786189-9vb7e326gr2t6ljntpmfkv99119n0kbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLKcFr45m2YkcNdYVdgZXrEXsgMRMgEe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645195786189-9vb7e326gr2t6ljntpmfkv99119n0kbb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "645195786189-9sq9rtn2a51mej9e69bn3gr18b9i9jcl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.creativegames.iOSMVVMDemo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
