@@ -1,2 +1,6 @@
 
-AndroidMVVMDemo/.idea/codeStyles/
+AndroidMVVMDemo/.idea/
+
+*.DS_Store
+
+AndroidMVVMDemo/fastlane/report.xml
